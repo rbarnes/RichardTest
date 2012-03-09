@@ -1,0 +1,13 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE dbo.usp_InsertMyTest 
+	@SomeText VARCHAR(50)
+AS
+
+INSERT INTO dbo.MyTestTable (
+		SomeText)
+SELECT @SomeText
+
+GO
