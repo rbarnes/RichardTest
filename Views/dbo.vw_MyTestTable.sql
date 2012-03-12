@@ -5,7 +5,8 @@ GO
 CREATE VIEW [dbo].[vw_MyTestTable]
 AS
 
-SELECT [SomeText]
+SELECT [RowID]
+      ,[SomeText]
       ,[RowCreatedDtm]
   FROM [RichTestDB].[dbo].[MyTestTable]
   
